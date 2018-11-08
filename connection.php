@@ -41,7 +41,7 @@
 	*/
 
 	
-/*
+
 	$server = 'mysql.idhostinger.com';
 
 	$username = 'u194943051_kuuni';
@@ -50,16 +50,16 @@
 
 	$database_name = 'u194943051_dbhos';
 
-	
+	$conn = new mysqli($servername, $username, $password);
 
-	$link = mysqli_connect($server, $username, $password, $database_name) or die('Connection Failed');
-*/
+	//$conn = mysqli_connect($server, $username, $password, $database_name) or die('Connection Failed');
+/*
 $servername = "localhost";
 $username = "root";
 $password = "";
 
 $conn = new mysqli($servername, $username, $password);
-
+*/
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
